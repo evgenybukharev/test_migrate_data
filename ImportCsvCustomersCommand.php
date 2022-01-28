@@ -54,6 +54,7 @@ class ImportCsvCustomersCommand extends Command
             $this->error(sprintf('Файл %s не доступен к чтению', $file));
             return;
         }
+
         $success = $errors = [];
 
         // Обрабатываем файл
