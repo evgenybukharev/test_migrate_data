@@ -62,7 +62,7 @@ class ImportCsvCustomersCommand extends Command
         }
         // Если есть успешные записи, то их сохраняем
         if (!empty($success)) {
-            //DB::table('customers')->insert($success);
+            DB::table('customers')->insert($success);
         }
         // Если есть ошибочные записи, то генерируем отчет
         if (!empty($errors)) {
