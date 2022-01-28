@@ -71,7 +71,7 @@ class ImportCsvCustomersCommand extends Command
 
         $this->info('Импорт завершен!');
         $this->info(sprintf('Импортировано успешно строк:%d', count($success)));
-        $this->warn(sprintf('Импортировано c ошибками строк:%d', count($errors)));
+        $this->warn(sprintf('Обработано строк c ошибками:%d', count($errors)));
     }
 
     private function process($row, &$data, &$errors): void
